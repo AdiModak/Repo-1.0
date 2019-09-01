@@ -1,0 +1,3 @@
+<div class="delete" *ngFor="let user of userList">
+    <li> {{user.id}} {{user.firstName}} <button (click)="deleteName(user)">Delete</button> </li>
+</div>

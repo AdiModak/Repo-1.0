@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="form-group">
+        <label>Id :</label>
+        <input required #id="ngModel" type="number" name="id" [(ngModel)]="user.id"
+         class="form-control"><br>
+    </div>   
+    <div class="form-group">
+            <label> First Name :</label>
+            <input  required #name="ngModel" type="text" name="firstName" [(ngModel)]='user.firstName' 
+            class="form-control"> <br>
+        </div>
+        <div class="form-group">
+            <label> Last Name :</label>
+            <input type="text" name="lastName" [(ngModel)]='user.lastName' class="form-control"><br>
+        </div>
+        <div class="form-group">
+            <label>Contact :</label>
+            <input type="text" name="contact" [(ngModel)]='user.contact' class="form-control"><br>
+        </div>
+        <div class="form-group">
+            <label> Address :</label>
+            <input type="text" name="add" [(ngModel)]='user.address' class="form-control"><br>
+        </div>
+        <button class="btn btn-primary" (click)="addInfo()">Add</button>
+    </div>
+    
+    
+    
