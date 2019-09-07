@@ -31,6 +31,7 @@ export class DeleteComponentClass {
         let newValue = this.userList.indexOf(user);
         this.userList.splice(newValue,1);
        console.log(this.userList);
+        localStorage.removeItem('names');
         //console.log('Index is :' + this.userList.findIndex);
         //this.userList.indexOf;
         // alert(this.userList.length);
